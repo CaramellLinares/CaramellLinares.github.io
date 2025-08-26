@@ -1,3 +1,4 @@
+
 // js/main.js
 (function () {
   const url = 'assets/pdfs/carta_cafe.pdf';
@@ -65,3 +66,4 @@
     resizeTimer = setTimeout(() => location.reload(), 200); // recarga rápida para recalcular escalas
   });
 })();
+

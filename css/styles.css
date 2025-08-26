@@ -1,35 +1,38 @@
-/* Permitir scroll global */
-html, body {
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     width: 100%;
-    min-height: 100%;
-    /* Quitar overflow: hidden; */
-}
-
-/* Contenedor con scroll, compatible iOS */
-#pdf-container {
-    width: 100%;
-    min-height: 100vh;
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 16px;
-    overflow: auto;                 /* <— clave para ver todas las páginas */
-    -webkit-overflow-scrolling: touch; /* inercia en iOS */
-    display: grid;
-    gap: 16px;
-    background: #111;
-}
-
-/* Página renderizada */
-.pdf-page {
+    box-sizing: border-box;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 14px rgba(0,0,0,.35);
+}
+#pdf-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pdf-embed {
+    width: 90vw;
+    height: 90vh;
+    max-width: 900px;
+    max-height: 100vh;
+    border: none;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+    background: #fff;
+}
+@media (max-width: 750px) {
+    .pdf-embed {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
 }
 
-/* Texto de estado */
-.pdf-status {
-    color: #eee;
-    font: 14px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-}
+        #ios-link {
+            display: none;
+            text-align: center;
+            margin-top: 1em;
+        }

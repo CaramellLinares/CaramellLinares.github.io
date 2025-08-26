@@ -1,7 +1,7 @@
 
 // js/main.js
 (function () {
-  const url = 'assets/pdfs/carta_cafe.pdf';
+  const url = 'assets/pdfs/Carta.pdf';
   const pdfContainer = document.getElementById('pdf-container');
 
   // Mensaje de carga

@@ -1,4 +1,4 @@
-const pdfUrl = 'assets/pdfs/carta_cafe.pdf'; // Ruta correcta al PDF
+const pdfUrl = 'assets/pdfs/Carta.pdf'; // Ruta correcta al PDF
 
 function loadPDF(url) {
     const container = document.getElementById('pdf-container');
